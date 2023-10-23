@@ -70,7 +70,7 @@ const App = ({ signOut }) => {
 
   return (
     <View className="App">
-      <Heading level={1}>My Notes App</Heading>
+      <Heading level={1}>Johan's Notes App</Heading>
       <View as="form" margin="3rem 0" onSubmit={createNote}>
         <Flex direction="row" justifyContent="center">
           <TextField
@@ -117,7 +117,7 @@ const App = ({ signOut }) => {
               <Image
                 src = {note.image}
                 alt = {`visual aid for ${notes.name}`}
-                style = {{ width: 400}}
+                style = {{ width: '150px', height: '150px'}}
               />
             )}
             <Button variation="link" onClick={() => deleteNote(note)}>
